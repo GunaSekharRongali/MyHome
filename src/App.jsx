@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Sidebar from './components/Sidebar';
 import Navbar from './components/Navbar';
-import Newsfeed from './components/Newsfeed';
+import NewsFeed from './components/NewsFeed';
 import Contacts from './components/Contacts';
 import Projects from './components/Projects';
 import Albums from './components/Albums';
@@ -25,7 +25,7 @@ const App = () => {
           <Sidebar />
           <div className="main-content">
             <Routes>
-              <Route path="/" element={<Newsfeed />} />
+              <Route path="/" element={<NewsFeed />} />
               <Route path="/contacts" element={<Contacts />} />
               <Route path="/projects" element={<Projects />} />
               <Route path="/albums" element={<Albums />} />

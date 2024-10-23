@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const NewsFeedComponent = () => {
+const NewsFeed = () => {
   const [postContent, setPostContent] = useState('');
   const [showOptions, setShowOptions] = useState(false);
   const [posts, setPosts] = useState([]); // State to store posts
@@ -156,4 +156,4 @@ const CommentSection = ({ index, handleCommentSubmit }) => {
   );
 };
 
-export default NewsFeedComponent;
+export default NewsFeed;
