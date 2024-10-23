@@ -31,7 +31,7 @@ const Navbar = () => {
     <div className="navbar flex items-center justify-between w-[100%] fixed top-0 left-0 right-0 shadow-md bg-white z-10">
       {/* Dropdown button with arrow (only visible on mobile) */}
       <div>
-        <img className='w-[35px] h-[35px] md:w-[45px] md:h-[45px] ml-[5px]' src="src\components\makerble-mini-logo.png" alt="" />
+        <img className='w-[35px] h-[35px] md:w-[45px] md:h-[45px] ml-[5px]' src="src\components\makerble-mini-logo.png" alt="logo" />
       </div>
       <div className="relative">
         {isMobile && (
@@ -68,7 +68,7 @@ const Navbar = () => {
           <img src="src/components/makerable.png" alt="" />
         </li>
         <li>
-          <button className="md:text-center md:flex md:gap-2 text-black rounded-full md:text-white text-lg items-center hover:bg-[#e9e9e9] md:bg-[#ef4444] text-white md:rounded-lg p-2">
+          <button className="md:text-center md:flex md:gap-2 text-black rounded-full lg:text-white text-lg items-center hover:bg-[#e9e9e9] md:bg-[#ef4444] md:rounded-lg p-2">
             <AddCircleOutlineOutlinedIcon titleAccess="Create" sx={{ fontSize: 30, cursor: 'pointer' }} />
             <span className="hidden lg:inline">Create</span>
           </button>

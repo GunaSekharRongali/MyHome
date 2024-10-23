@@ -43,19 +43,19 @@ const Boards = () => {
     <div className="p-8 bg-gray-100 w-[80%] sm:w-[70%] md:w-[65%] lg:w-[70%] xl:w-[70%] relative sm:left-[200px] md:left-[250px] lg:left-[300px] left-[80px] top-[65px]">
       <h1 className="text-3xl font-bold mb-6">Project Board</h1>
 
-      <form onSubmit={addTask} className="mb-6 flex">
+      <form onSubmit={addTask} className="mb-6 md:flex">
         <input
           type="text"
           value={newTask}
           onChange={handleInputChange}
           placeholder="Add a new task"
-          className="p-2 border rounded w-1/2 mr-2"
+          className="p-2 border rounded mb-1 md:mr-2"
           required
         />
         <select
           value={selectedColumn}
           onChange={(e) => setSelectedColumn(e.target.value)}
-          className="p-2 border rounded"
+          className="p-2 mb-1 md:mb-0 border rounded"
         >
           {columns.map((column) => (
             <option key={column.title} value={column.title}>
@@ -63,7 +63,7 @@ const Boards = () => {
             </option>
           ))}
         </select>
-        <button className="bg-green-500 text-white py-2 px-4 rounded hover:bg-green-600">
+        <button className="block bg-green-500 text-white py-2 px-4 rounded hover:bg-green-600">
           Add Task
         </button>
       </form>

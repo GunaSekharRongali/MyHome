@@ -45,7 +45,7 @@ const EventsComponent = () => {
   return (
     <div className="p-8 bg-gray-100 w-[84%] sm:w-[60%] md:w-[65%] lg:w-[70%] xl:w-[70%] relative sm:left-[200px] md:left-[250px] lg:left-[300px] left-[80px] top-[65px]">
       <div className="flex justify-between items-center mb-6">
-        <h1 className="text-3xl font-bold">Events Management</h1>
+        <h1 className="text-xl md:text-3xl font-bold">Events Management</h1>
         <div className="flex space-x-4">
           <button
             onClick={() => setShowForm(!showForm)}
